@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <style>
+        body {
+            display: flex;
+            justify-items: center;
+            color: #fff;
+        }
+        #root {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: "display display display display" "cdisplay cdisplay cdisplay cdisplay" "delete delete divide multily" "seven eight nine minus" "four five six plus" "one two three equal" "zero zero dot equal";
+        grid-gap: 0.1px;
+        padding: 5px;
+        background-color: darkslategray;
+        width: 240px;
+        height: 320px;
+        }
+        button {
+            background-color: silver;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        button:hover {
+            background-color: firebrick;
+            color: white;
+        }
+        button:active {
+            box-shadow: 0 1px #666;
+            transform: translate(4px);
+        }
+        #display {
+        grid-area: display;
+        color: #fff;
+        text-align: right;
+        background: teal; 
+        font-size: 25px;
+        }
+
+        #cdisplay {
+        grid-area: cdisplay;  
+        background: teal;
+        border: none;
+        font-size: 25px; 
+        text-align: right;
+        color: #fff;
+        }
+        #delete {
+            grid-area: delete;
+            background: #d10909;
+        }
+        #divide {
+            grid-area: divide;
+        }
+        #multiply {
+            grid-area: multipl;
+        }
+        #plus {
+            grid-area: plus;
+        }
+        #minus {
+            grid-area: minus;
+        }
+        #seven {
+            grid-area: seven;
+        }
+        #eight{
+            grid-area: eight;
+        }
+        #nine{
+            grid-area: nine;
+        }        
+        #four{
+            grid-area: four;
+        }
+        #five{
+            grid-area: five;
+        }
+        #six{
+            grid-area: six;
+        }
+        #three{
+            grid-area: three;
+        }
+        #two{
+            grid-area: two;
+        }
+        #one{
+            grid-area: one;
+        }
+        #dot{
+            grid-area: dot;
+        }
+        #zero{
+            grid-area: zero;
+        }
+        #equal{
+            grid-area: equal;
+        }
+        span {
+            vertical-align: middle;
+        }
+    </style>
+    </head>
+    <body>
+        <div id="root">
+        <label id="display">5+2</label>
+        <label id="cdisplay">7</label>
+        <button id="delete">Del</button>
+        <button id="divide">/</button>
+        <button id="multipl">*</button>
+        <button id="seven">7</button>
+        <button id="eight">8</button>
+        <button id="nine">9</button>
+        <button id="minus">-</button>
+        <button id="four">4</button>
+        <button id="five">5</button>
+        <button id="six">6</button>
+        <button id="plus">+</button>
+        <button id="one">1</button>
+        <button id="two">2</button>
+        <button id="three">3</button>
+        <button id="zero">0</button>
+        <button id="dot">.</button>
+        <button id="equal">=</button>
+        </div>
+    </body>
+</html>
